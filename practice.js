@@ -137,13 +137,15 @@ contains(names, 'Colt', function(result){
 //Code Here
 
 let mySet = new Set(arr);
-let uniqArr= Array.from(mySet)
+let uniqArr= Array.from(mySet);
 function uniq(arr,cb){
-  var duplicate = arr.filter(function(index, arr)){
-    return arr.indexOf(ind)===arr});
+  var duplicate = arr.filter(function(indexOf, arr) {
+    return arr.indexOf(ind)===arr;
+  
     cb(duplicate);
-  }
-}
+  })
+
+
 
 console.log(uniqArr)
 
@@ -170,9 +172,9 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 
-function take(arr, cb){
+function each(arr, cb){
   for(var i = 0; i < arr.length; i++){
-    cb(arr[i]i)
+    cb(arr[i],i)
   }
   arr.take()
 }
